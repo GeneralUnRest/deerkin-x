@@ -1,0 +1,27 @@
+{
+  "name": "deerkin-x",
+  "version": "0.0.1",
+  "description": "deerkin written in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gogs@gogs.ispretty.sexy:prussian/deerkin-x.git"
+  },
+  "keywords": [
+    "deerkin",
+    "irc",
+    "bot"
+  ],
+  "author": "prussian",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "irc": "^0.4.1",
+    "irc-colors": "^1.2.0",
+    "level": "^1.4.0"
+  }
+}
