@@ -29,7 +29,7 @@ print_term = function (value, res) {
 				res.write(term_color.red.bgRed('@'));
 				break;
 			case '5': 
-				res.write(term_color.grey.bgGrey('@'));
+				res.write(term_color.grey.bgWhite.dim('@'));
 				break;
 			case '6':
 				res.write(term_color.magenta.bgMagenta('@'));
@@ -59,7 +59,7 @@ print_term = function (value, res) {
 				res.write(term_color.white.bgWhite('@'));
 				break;
 			case 'f': case 'F':
-				res.write(term_color.grey.bgGrey('@'));
+				res.write(term_color.grey.bgWhite.dim('@'));
 				break;
 			case 'n': case '\n':
 				res.write('\n');
