@@ -29,13 +29,13 @@ print_term = function (value, res) {
 				res.write(term_color.red.bgRed('@'));
 				break;
 			case '5': 
-				res.write(term_color.grey.dim.bgGrey.dim('@'));
+				res.write(term_color.grey.bgGrey('@'));
 				break;
 			case '6':
-				res.write(term_color.magenta.dim.bgMagenta.dim('@'));
+				res.write(term_color.magenta.bgMagenta('@'));
 				break;
 			case '7':
-				res.write(term_color.green.dim.bgGreen.dim('@'));
+				res.write(term_color.green.bgGreen('@'));
 				break;
 			case '8':
 				res.write(term_color.yellow.bgYellow('@'));
@@ -44,7 +44,7 @@ print_term = function (value, res) {
 				res.write(term_color.green.bgGreen('@'));
 				break;
 			case 'a': case 'A':
-				res.write(term_color.cyan.dim.bgCyan.dim('@'));
+				res.write(term_color.cyan.bgCyan('@'));
 				break;
 			case 'b': case 'B':
 				res.write(term_color.cyan.bgCyan('@'));
@@ -56,7 +56,7 @@ print_term = function (value, res) {
 				res.write(term_color.red.bgRed('@'));
 				break;
 			case 'e': case 'E':
-				res.write(term_color.white.dim.bgWhite.dim('@'));
+				res.write(term_color.white.bgWhite('@'));
 				break;
 			case 'f': case 'F':
 				res.write(term_color.grey.bgGrey('@'));
