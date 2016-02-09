@@ -14,52 +14,52 @@ print_term = function (value, res) {
 	for (var i = 0; i < value.length; i++) {
 		switch(value.charAt(i)) {
 			case '0':
-				res.write(term_color.white('@'));
+				res.write(term_color.white.bgWhite('@'));
 				break;
 			case '1':
-				res.write(term_color.black('@'));
+				res.write(term_color.black.bgBlack('@'));
 				break;
 			case '2': 
-				res.write(term_color.blue('@'));
+				res.write(term_color.blue.bgBlue('@'));
 				break;
 			case '3':
-				res.write(term_color.green('@'));
+				res.write(term_color.green.bgGreen('@'));
 				break;
 			case '4':
-				res.write(term_color.red('@'));
+				res.write(term_color.red.bgRed('@'));
 				break;
 			case '5': 
-				res.write(term_color.grey.dim('@'));
+				res.write(term_color.grey.dim.bgGrey.dim('@'));
 				break;
 			case '6':
-				res.write(term_color.magenta.dim('@'));
+				res.write(term_color.magenta.dim.bgMagenta.dim('@'));
 				break;
 			case '7':
-				res.write(term_color.green.dim('@'));
+				res.write(term_color.green.dim.bgGreen.dim('@'));
 				break;
 			case '8':
-				res.write(term_color.yellow('@'));
+				res.write(term_color.yellow.bgYellow('@'));
 				break;
 			case '9':
-				res.write(term_color.green('@'));
+				res.write(term_color.green.bgGreen('@'));
 				break;
 			case 'a': case 'A':
-				res.write(term_color.cyan.dim('@'));
+				res.write(term_color.cyan.dim.bgCyan.dim('@'));
 				break;
 			case 'b': case 'B':
-				res.write(term_color.cyan('@'));
+				res.write(term_color.cyan.bgCyan('@'));
 				break;
 			case 'c': case 'C':
-				res.write(term_color.blue('@'));
+				res.write(term_color.blue.bgBlue('@'));
 				break;
 			case 'd': case 'D':
-				res.write(term_color.red('@'));
+				res.write(term_color.red.bgRed('@'));
 				break;
 			case 'e': case 'E':
-				res.write(term_color.white.dim('@'));
+				res.write(term_color.white.dim.bgWhite.dim('@'));
 				break;
 			case 'f': case 'F':
-				res.write(term_color.grey('@'));
+				res.write(term_color.grey.bgGrey('@'));
 				break;
 			case 'n':
 				res.write('\n');
