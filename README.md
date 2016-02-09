@@ -26,3 +26,7 @@ writing deers
 to see your new deer
 
 	curl server.tld:port/deer/<deer-name>
+
+if you want to make your own deer in your text editor you might be interested in
+
+https://github.com/GeneralUnRest/vim-deerkin-syntax-highlight
