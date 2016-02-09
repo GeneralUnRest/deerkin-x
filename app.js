@@ -61,7 +61,7 @@ print_term = function (value, res) {
 			case 'f': case 'F':
 				res.write(term_color.grey.bgGrey('@'));
 				break;
-			case 'n':
+			case 'n': case '\n':
 				res.write('\n');
 				break;
 			default:
@@ -123,7 +123,7 @@ print_irc = function (value,client,to) {
 			case 'f': case 'F':
 				linebuffer+=irc_color.silver.bgsilver('@');
 				break;
-			case 'n':
+			case 'n': case '\n':
 				// make sure the last line is 
 				// terminated with n
 				// otherwise it won't be printed
@@ -175,10 +175,10 @@ save_deer = function (req,res,next) {
 			return;
 		}
 		
-		if (req.body.match(/[^0-9a-fA-Fn]/)) {
+		if (req.body.match(/[^0-9a-fA-Fn\n]/)) {
 			res.status(500);
 			res.write("DEER PASSED IN IS INVALID\n");
-			res.write("DEER MUST NOT MATCH /[^0-9a-fA-Fn]/\n");
+			res.write("DEER MUST NOT MATCH /[^0-9a-fA-Fn\\n]/\n");
 			res.write("SEE /help FOR MORE INFO");
 
 			res.send();
@@ -205,7 +205,7 @@ app.route(web_config.ROOT+'/deer/:deerid')
 	.post([read_data,save_deer]);
 
 // start listening on config'd port (default: 8080)
-app.listen(web_config.port);
+app.listen(web_config.port, web_config.address);
 
 // irc client stuff
 var irc_config = require('./configs/irc_config');
